@@ -13,6 +13,8 @@ function CarouselBanner({ movies }: { movies: Movie[] }) {
 		Autoplay(),
 	]);
 
+	console.log('hello');
+
 	return (
 		<div
 			className='overflow-hidden lg:-mt-40 relative cursor-pointer'
