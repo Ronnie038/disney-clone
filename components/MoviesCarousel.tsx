@@ -16,7 +16,7 @@ function MoviesCarousel({ title, movies, isVertical }: Props) {
 				)}
 			>
 				{isVertical
-					? movies.map((movie) => (
+					? movies?.map((movie) => (
 							<div
 								key={movie.id}
 								className={cn(
@@ -34,7 +34,7 @@ function MoviesCarousel({ title, movies, isVertical }: Props) {
 								</div>
 							</div>
 					  ))
-					: movies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
+					: movies?.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
 			</div>
 		</div>
 	);
